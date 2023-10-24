@@ -1,10 +1,10 @@
 <template>
   <div v-if="visible" class="card">
     <div class="data">
-      <p>Nom : {{ storeData.nom }}</p>
+      <p>Nom : {{ storeData?.nom }}</p>
     </div>
     <div class="data">
-      <p>Adresse : {{ storeData.addresse }}</p>
+      <p>Adresse : {{ storeData?.addresse }}</p>
     </div>
     <div>
       <button @click="emit('close')">

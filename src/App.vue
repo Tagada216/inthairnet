@@ -6,7 +6,7 @@ import { storesData } from "./store";
 let displayInformations = ref(false);
 
 const stores = storesData.features;
-let selectedStore = ref({});
+let selectedStore = ref();
 
 function loadStore() {
   const index = Math.floor(Math.random() * stores.length);
