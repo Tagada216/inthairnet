@@ -21,6 +21,7 @@ onBeforeMount(() => {
 <template>
   <div class="container">
     <h1 id="magasinNom">{{ selectedStore.nom }}</h1>
+    <h2 id="magasinVille">{{ selectedStore.ville }}</h2>
     <CardStoreComponent
       :visible="displayInformations"
       :storeData="selectedStore"
@@ -63,6 +64,11 @@ onBeforeMount(() => {
   text-decoration: inherit;
   font-family: "Josefin Sans", sans-serif;
   animation: flottaison 3s infinite;
+}
+#magasinVille {
+  color: #dbdbe3;
+  text-decoration: inherit;
+  font-family: "Josefin Sans", sans-serif;
 }
 @keyframes flottaison {
   0% {
